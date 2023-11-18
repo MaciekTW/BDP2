@@ -1,0 +1,3 @@
+W przypadku 5b, dla atrybutu 'lastname' stosujemy podejście SCD typu 1, natomiast dla 'title' używamy SCD typu 2. W sytuacji opisanej w 5c, mamy do czynienia z SCD typu 0.
+
+To odnosi się do zasady określonej w punkcie 4d, która mówi: "Przerwij transformację, jeśli wykryte zostaną zmiany w atrybucie stałym". Oznacza to, że jeżeli nastąpi próba zmiany stałego atrybutu, jakim jest 'first name', proces powinien zakończyć się niepowodzeniem.
