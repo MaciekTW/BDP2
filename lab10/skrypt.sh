@@ -1,5 +1,5 @@
 #!/bin/bashHOST
-
+# Created: 14.01.2024
 # Usage: skrypt.sh [-u URL] [-i INDEX] [-h HOST] [-p PORT] [-U USER] [-P PASS] [-d DB_NAME] [-w PASSWORD]
     
 #     -u URL        URL of the file to download (default: http://home.agh.edu.pl/~wsarlej/dyd/bdp2/materialy/cw10/InternetSales_new.zip)
