@@ -1,0 +1,5 @@
+bcp AdventureWorksDW2019.dbo.CUSTOMERS_402644 format nul -c -t',' -f customers.fmt -S DESKTOP-72MLH73 -T
+
+Windows jakoznaku końca linii używa \r\n a linux \n dlatego nalezy zmodyfikować customers.fmt
+
+bcp AdventureWorksDW2019.dbo.CUSTOMERS_402644 in "CUSTOMERS_402644.csv" -f customers.fmt -S DESKTOP-72MLH73 -T
