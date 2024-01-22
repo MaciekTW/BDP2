@@ -1,0 +1,156 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/22/2024 5:20:58 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-72MLH73"
+  DTS:CreatorName="DESKTOP-72MLH73\Maciek"
+  DTS:DTSID="{7669B2AC-AAAB-4446-BB88-001C2C315086}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5314.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{B1E354A4-A3BF-4582-99E8-5001A74079FC}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[HTTP Connection Manager]"
+      DTS:CreationName="HTTP"
+      DTS:DTSID="{94B1C382-583E-43F6-AB78-4D90939376B3}"
+      DTS:ObjectName="HTTP Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="http://www.dneonline.com/calculator.asmx?wsdl">
+          <DTS:HttpConnection
+            DTS:ServerURL="http://www.dneonline.com/calculator.asmx?wsdl">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8UqVlQtLH02FKqgAbwjvowAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABpeIzeuiGIQs+EnkhWcKSFnj/bDtFSPZL2ZFSEfxObCQAAAAAOgAAAAAIAACAAAABGwf1uDX0GoQmwsJK6YFVOvjHk2cDLrfaRs1Y1D8w6ChAAAADdZcMKwJVU0c9KSuIpams2QAAAAPPzS2QpB7F9c3enL8gvV5HtwwlsFLHUqkkCcA6DBNBG7upkDCn3hiHEKv3zn9RH9qbbIOXqbQm84E+mKA7Nabk</DTS:Property>
+            <DTS:Property
+              DTS:Name="ProxyPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8UqVlQtLH02FKqgAbwjvowAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABNoZhiAHZcD2wzYuTbLRvxmKkFOxXOh4v+1IjpRKY8zgAAAAAOgAAAAAIAACAAAADUJ2CJtHgsxSuGdKKQ+dVSxL5rjkdRe8Q/ekeK1b3WuRAAAAC9C95u+aJ7UbAOJIZYy/rtQAAAANj/dQuJXolLSlsgPiLHbkVFnoLGvDp2C6YLRN88aRwA7wQblO/XKPpnTdV4OJixgEzPb4jBnNhymjJ0nBMWXN8</DTS:Property>
+          </DTS:HttpConnection>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[HTTP Connection Manager 1]"
+      DTS:CreationName="HTTP"
+      DTS:DTSID="{8F22B521-AF10-460F-8201-BB39B6B5DC7D}"
+      DTS:ObjectName="HTTP Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="http://www.dneonline.com/calculator.asmx?wsdl">
+          <DTS:HttpConnection
+            DTS:ServerURL="http://www.dneonline.com/calculator.asmx?wsdl">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8UqVlQtLH02FKqgAbwjvowAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADPd9qa/fwDuiWW013BVhaKeP5XOyIYEX/2APJIEClJbAAAAAAOgAAAAAIAACAAAAAko7UwR7fyjkvhvtAsM2Apazan+erYJeh+Hw4vb6OYHRAAAACOgVAL3af+SqYbyHglm9E2QAAAAJELUSQyHFChYLVZuoBTWHSIXlaYXZDavFREyTnnpVrQQjCm71MZHXHmGEBBsTaIePl24eopxgvBWCtkIChNikM</DTS:Property>
+            <DTS:Property
+              DTS:Name="ProxyPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8UqVlQtLH02FKqgAbwjvowAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB6kXhibJFUcanbXL0t0Z2tCkihb69L+w/iDIiANF0AWgAAAAAOgAAAAAIAACAAAADvcmsWpAeZSu7qM9sxfrXo9rcgg74blXwJIZlPaNdvHRAAAADQ+azQGCRFzcDyupnouqdMQAAAAGH8bwTge2bIonNEx8MSjH7F+O8hiAekvXTBCibot4hPYuacNun7ol/GwichDjboV6a2Y8ycEklPnTQISFGDmjI</DTS:Property>
+          </DTS:HttpConnection>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[results.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{181ED392-3E15-49B0-84AD-B9239D4EB109}"
+      DTS:ObjectName="results.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\Semsetr9\BDP2\lab11\results.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9844CCA4-AACE-47CF-B1FA-C58EE39B4B5A}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="a">
+      <DTS:VariableValue
+        DTS:DataType="3">7</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DB2A9D20-A6B9-485D-BB8E-98615C4A4864}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="b">
+      <DTS:VariableValue
+        DTS:DataType="3">9</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Web Service Task"
+      DTS:CreationName="Microsoft.WebServiceTask"
+      DTS:Description="Web Service Task"
+      DTS:DTSID="{4EA81E50-0C70-4978-B815-E01713C7C4F0}"
+      DTS:ExecutableType="Microsoft.WebServiceTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Web Service Task"
+      DTS:TaskContact="Web Service Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <WSTask:WebServiceTaskData
+          WSTask:ConnectionName="{8F22B521-AF10-460F-8201-BB39B6B5DC7D}"
+          WSTask:Service="Calculator"
+          WSTask:WSDLFile="D:\Semsetr9\BDP2\lab11\calculator.wsdl"
+          WSTask:OverwriteWSDLFile="True"
+          WSTask:OutputLocation="results.xml" xmlns:WSTask="www.microsoft.com/sqlserver/dts/tasks/webservicetask">
+          <WSTask:MethodInfo
+            WSTask:MethodName="Add"
+            WSTask:MessageName="">
+            <WSTask:Documentation>Adds two integers. This is a test WebService. Â©DNE Online</WSTask:Documentation>
+            <WSTask:ParamInfo
+              WSTask:Name="intA"
+              WSTask:Datatype="int"
+              WSTask:ParamType="Variable"
+              WSTask:SeqNumber="0">
+              <WSTask:VariableValue>User::a</WSTask:VariableValue>
+            </WSTask:ParamInfo>
+            <WSTask:ParamInfo
+              WSTask:Name="intB"
+              WSTask:Datatype="int"
+              WSTask:ParamType="Variable"
+              WSTask:SeqNumber="1">
+              <WSTask:VariableValue>User::b</WSTask:VariableValue>
+            </WSTask:ParamInfo>
+          </WSTask:MethodInfo>
+        </WSTask:WebServiceTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="166.666666666667,42.6666666666667"
+          Id="Package\Web Service Task"
+          TopLeft="683.333302785954,179.605261185864" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
